@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A leer</title>
+</head>
+<style>
+    body{
+        display: flex;
+        font-family: sans-serif;
+        background-image: url(https://www.debate.com.mx/__export/1551998536228/sites/debate/img/2019/03/07/banda_sonora_espacio.jpg_346753400.jpg);
+        background-size: cover;
+    }
+    h1{
+        font-size: 3em;
+        margin: 100px;
+        margin-top: 100px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(40%);
+        color: snow;
+    
+    }
+    h2{
+        margin: -50px;
+        margin-top: 200px;
+        transform: translateX(-115%);
+        color: snow;
+    }
+    .button{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+
+    }
+#si {
+left: 30%;
+transform: translateX(160%)translateY(-20%);   
+background-color: limegreen; 
+color: aliceblue; 
+}
+#no {
+left: 60%;
+transform: translateY(145%)translateY(-165%);
+background-color: red;
+color: aliceblue;
+}
+</style>
+<body>
+    <h1>¿Por qué tanta curiosidad?</h1>
+
+    <h2>¿Estas preparada?</h2>
+    <a href="Enserio.html" class="button" id="si"> Si</a>
+    <a href="#" class="button" id="no">No</a>
+</body>
+<script>
+let no = document.getElementById('no')
+    no.addEventListener("mousemove",function(e){
+    let x= Math.round(Math.random()*93);
+    let y= Math.round(Math.random()*93);
+    no.style.left = x + "%";
+    no.style.top= y + "%";
+    })
+    </script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronicas 2021</title>
+</head>
+<style>
+    body{
+        
+        display: flex;
+        font-family: sans-serif;
+        background-image: url(https://www.chillcarrier.de/wp-content/uploads/2018/07/cropped-lasnap.png);
+        background-size: cover;
+    }
+    h1{
+        margin: 100px;
+        margin-top: 100px;
+        left: 50%;
+        transform: translateX(120%);
+        font-size: 3em;
+        text-align: center;
+        color: snow;
+    }
+    h2{
+        margin: 100px;
+        margin-top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+        text-align: center;
+        color: snow;
+    }
+    .button{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+
+    }
+#si {
+left: 38%;
+transform: translateX(50%)translateX(-80%);   
+background-color: limegreen; 
+color: aliceblue; 
+}
+#noBtn {
+left: 58%;
+
+background-color: red;
+color: aliceblue;
+}
+</style>
+<body>
+    <H1> Hola Querida</H1>
+    <h2> ¿Quieres saber que es esto?</H2>
+    <a href="leer.html" class="button" id="si"> Si</a>
+    <a class="button" id="noBtn"> No</a>
+</body>
+<script>
+const noBtn=document.querySelector('#noBtn')
+
+
+noBtn.addEventListener('mouseover', function () {
+    const randomX = parseInt(Math.random()*100);
+    const randomY = parseInt(Math.random()*100);
+    noBtn.style.setProperty('top',randomY+'%');
+    noBtn.style.setProperty('left',randomX+'%');
+    noBtn.style.setProperty('transform',`translate(-${randomX}%,-${randomY}%)`);
+})
+</script>
+</html>
